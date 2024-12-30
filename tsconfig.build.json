@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
+  "paths": {
+      "@Features/user": ["src/features/user/index.ts"],
+      "@Features/task": ["src/features/task/index.ts"],
+      "@Public": ["src/public/index.ts"],
+    }
+}
