@@ -1,74 +1,86 @@
-# task-manager-coally-backend
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Task Manager Coally Backend
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+The **Task Manager Coally Backend** is a NestJS-based API designed to support a task management application. It allows users to:
+
+- Create, read, update, and delete tasks.
+- View tasks through a modern and intuitive interface.
+- Mark tasks as completed or pending.
 
 ## Installation
 
+To set up the application locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd task-manager-coally-backend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the App
+
+You can run the application in different modes using the following commands:
+
+- **Development mode:**
+  ```bash
+  npm run start
+  ```
+
+- **Watch mode (hot-reload):**
+  ```bash
+  npm run start:dev
+  ```
+
+- **Production mode:**
+  ```bash
+  npm run start:prod
+  ```
+
+## Testing
+
+Run unit tests to ensure the functionality of the application:
+
 ```bash
-$ yarn install
+# Unit tests
+npm run test
 ```
 
-## Running the app
+## API Documentation
 
-```bash
-# development
-$ yarn run start
+Explore the API endpoints using Swagger:
 
-# watch mode
-$ yarn run start:dev
+[Task Manager Backend Swagger Documentation](https://task-manager-coally-backend.onrender.com/swagger)
 
-# production mode
-$ yarn run start:prod
-```
+## Technologies Used
 
-## Test
+- **NestJS**: A progressive Node.js framework.
+- **Mongoose**: For MongoDB integration.
+- **JWT**: JSON Web Tokens for authentication.
+- **Swagger**: For API documentation.
 
-```bash
-# unit tests
-$ yarn run test
+## Roadmap / TODOs
 
-# e2e tests
-$ yarn run test:e2e
+- Implement comprehensive unit tests.
+- Add integration and end-to-end testing.
+- Enhance API error handling and validation.
+- Support for role-based access control (RBAC).
 
-# test coverage
-$ yarn run test:cov
-```
+## Contributing
 
-## Support
+Contributions are welcome! If you would like to improve this project, follow these steps:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes with clear messages.
+4. Open a pull request describing your changes.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is [MIT licensed](LICENSE).
+

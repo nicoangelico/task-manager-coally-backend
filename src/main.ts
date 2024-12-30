@@ -19,6 +19,10 @@ async function bootstrap() {
         url: `http://localhost:8000/${globalPrefix}`,
         name: 'Local Server',
       },
+      {
+        url: `https://task-manager-coally-backend.onrender.com/${globalPrefix}`,
+        name: 'Production',
+      },
     ],
     description: '',
   });

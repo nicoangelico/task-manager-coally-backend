@@ -13,6 +13,11 @@ export class CreateUserService {
 
   async create(body: ICreateUserBody): Promise<void> {
     const { email, name, password, password_confirmation } = body;
+    const user = await this.userRepository.findByEmail(email);
+    
+    if (user) {
+      throw new BadRequestException('User already exists');
+    }
 
     if (password !== password_confirmation) {
       throw new BadRequestException('Passwords do not match.');

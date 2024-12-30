@@ -17,7 +17,7 @@ export class UserController {
     return this.loginService.login(loginBody.email, loginBody.password);
   }
 
-  @Post('create-user')
+  @Post('create')
   async createBullishUser(@Body() body: CreateUserBodyDto) {
     return this.createUserService.create(body);
   }
